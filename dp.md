@@ -8,18 +8,28 @@ The one constant in software development
 
 No matter where you work, what you’re building, or what language you are programming in, what’s the one true constant that will be with you always?
 
-
-
 Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don’t
 
+Strive for loosely coupled designs between objects that interact
+
+## OO Basics
 * Abstraction
 * Encapsulation
 * Inheritance
 * Polimorphism
 
+## OO Principles
 * Encapsulate what varies
 * Favor composition over inheritance
 * Program to an interface, not an implementation
 
+## Relationships
+Is-a extents -|> inheritance
+Implements ..|> interface
+Has-a -> extends
+
 ## Strategy Pattern
 The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it
+
+## Observer Pattern
+The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically
