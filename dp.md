@@ -33,3 +33,29 @@ The Strategy Pattern defines a family of algorithms, encapsulates each one, and 
 
 ## Observer Pattern
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically
+
+| Pattern | Usage |
+|---|---|
+| Abstract Factory | 5 |
+| Builder | 2 |
+| Factory Method | 5 |
+| Prototype | 3 |
+| Singleton | 4 |
+| Adapter | 4 |
+| Bridge | 3 |
+| Composite | 4 |
+| Decorator | 3 |
+| Facade | 5 |
+| Flyweight | 1 |
+| Proxy | 4 |
+| Chain of Responsibility | 2 |
+| Command | 4 |
+| Interpreter | 1 |
+| Iterator | 5 |
+| Mediator | 2 |
+| Memento | 1 |
+| Observer | 5 |
+| State | 3 |
+| Strategy | 4 |
+| Template Method | 3 |
+| Visitor | 1 |
