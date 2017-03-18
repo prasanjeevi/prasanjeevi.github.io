@@ -49,6 +49,6 @@ Service-oriented architecture (SOA) - A service is a discrete unit of functional
 * [martinfowler.com > Microservices](https://martinfowler.com/articles/microservices.html)
 
 ## Books
-![building-microservices-book](images/building-microservices-book.jpg?raw=true | width=215)
+![building-microservices-book](images/building-microservices-book.jpg?raw=true)
 
-![](images/microservice-patterns-book.png?raw=true | width=539)
+![microservice-patterns-book](images/microservice-patterns-book.png?raw=true)
