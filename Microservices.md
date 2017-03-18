@@ -7,12 +7,18 @@
 
 ## Microservice Architecture
 ![microservice-architecture](images/microservice-architecture.png?raw=true)
+Image: microservices.io
 
 ## Monoliths vs Microservices
 ![monoliths-vs-microservices](images/monoliths-vs-microservices.png?raw=true)
+Image: martinfowler.com
+
+![infographic-microservices](images/infographic-microservices.png?raw=true)
+Image: pivotal.io
 
 ## Scale cube
 ![scale-cube](images/scale-cube.jpg?raw=true)
+Image: microservices.io
 
 ## Service  
 Service-oriented architecture (SOA) - A service is a discrete unit of functionality that can be accessed remotely and acted upon and updated independently
