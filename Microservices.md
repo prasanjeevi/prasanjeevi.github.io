@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="styles.css"/>
 # Microservices
 
 * Small [services](#service)
@@ -52,8 +53,3 @@ Service-oriented architecture (SOA) - A service is a discrete unit of functional
 ![building-microservices-book](images/building-microservices-book.jpg?raw=true)
 
 ![](images/microservice-patterns-book.png?raw=true)
-
-<style>
-img[alt=building-microservices-book] { width: 215px; }
-img[alt=monoliths-vs-microservices], img[alt=scale-cube] { width: 539px; }
-</style>
