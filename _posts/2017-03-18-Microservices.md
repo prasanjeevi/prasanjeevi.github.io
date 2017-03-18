@@ -6,18 +6,18 @@
 * Fault isolation
 
 ## Microservice Architecture
-![microservice-architecture](images/microservice-architecture.png?raw=true)
+![microservice-architecture]({{ site.baseurl }}/images/microservice-architecture.png?raw=true)
 Image: microservices.io
 
 ## Monoliths vs Microservices
-![monoliths-vs-microservices](images/monoliths-vs-microservices.png?raw=true)
+![monoliths-vs-microservices]({{ site.baseurl }}/images/monoliths-vs-microservices.png?raw=true)
 Image: martinfowler.com
 
-![infographic-microservices](images/infographic-microservices.png?raw=true)
+![infographic-microservices]({{ site.baseurl }}/images/infographic-microservices.png?raw=true)
 Image: pivotal.io
 
 ## Scale cube
-![scale-cube](images/scale-cube.jpg?raw=true)
+![scale-cube]({{ site.baseurl }}/images/scale-cube.jpg?raw=true)
 Image: microservices.io
 
 ## Service  
@@ -55,6 +55,6 @@ Service-oriented architecture (SOA) - A service is a discrete unit of functional
 * [martinfowler.com > Microservices](https://martinfowler.com/articles/microservices.html)
 
 ## Books
-![building-microservices-book](images/building-microservices-book.jpg?raw=true)
+![building-microservices-book]({{ site.baseurl }}/images/building-microservices-book.jpg?raw=true)
 
-![microservice-patterns-book](images/microservice-patterns-book.png?raw=true)
+![microservice-patterns-book]({{ site.baseurl }}/images/microservice-patterns-book.png?raw=true)
