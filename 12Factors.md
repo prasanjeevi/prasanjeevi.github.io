@@ -3,7 +3,7 @@
 ## 1. Codebase
   > One codebase tracked in revision control, many deploys
   * git
-  * Isolate code from [dependencies](#2.dependencies) and configuration
+  * Isolate code from [dependencies](#2-dependencies) and [configuration](#3-config)
   * Ignore unnecessary files / folders when pushing
     * use `.gitignore` `.cfignore`
     ```
@@ -15,7 +15,7 @@
      .vs
      .vscode
     ```
-  * One codbase per microservice
+  * One codebase per microservice
 
 ## 2. Dependencies
   > Explicitly declare and isolate dependencies
@@ -93,5 +93,5 @@
 Image: dzone.com
 
 ### The Cloud-Native Architecture
-![](images/12factors-cf.svg?raw=true)
+![](images/12factors-cf.png?raw=true)
 Image: pivotal.io
