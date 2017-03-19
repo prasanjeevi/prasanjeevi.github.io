@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: rgb(204, 204, 204);
+}
+
+html{
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+.container{
+    border: 1px solid rgb(238, 238, 238);
+    width: 21cm;
+    margin: 0 auto;
+    box-shadow: 0 0 .5cm;
+    background: white;
+    overflow: auto;
+    padding: 16px;
+}
+
+h1, p.tagline{
+    margin: 0;
+    text-align: center;
+}
+
+p.tagline{
+    color: rgb(102, 102, 102);
+}
+
+h1 span{
+    color: #4285f4;
+}
+
+nav{
+    margin-top: 10px;
+    overflow: auto;
+    border-top : 1px solid rgb(238, 238, 238);
+    border-bottom : 1px solid rgb(238, 238, 238);
+}
+
+nav div{
+    text-align: center;
+    width: 33.33%;
+    min-width: 200px;
+    padding: 5px 0;
+    float: left;
+}
+
+.email:before{
+    content: "✉ "
+}
+.mobile:before{
+    content: "📱";
+}
+.web:before{
+    content: "🌐 ";
+}
+
+section{
+    margin-top: 20px;
+    overflow: auto;
+}
+
+h4{
+    margin: 8px 0;
+}
+
+.miles{
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    text-align: center;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    float: left;
+}
+
+.meter{
+    font-size: 30px;
+    text-align: center;
+}
+
+.unit{
+    font-size: 16px;
+}
+
+.data{
+    float: left;
+}
+
+.experience, .academic{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    position: relative;
+    min-width: 325px
+}
+
+.badge{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.clear{
+    clear: both;
+}
+
+.active{
+    border : 1px solid teal;
+}
+
+.star:before{
+  content: "★☆☆☆☆"
+}
+.two-star:before{
+  content: "★★☆☆☆"
+}
+.three-star:before{
+  content: "★★★☆☆"
+}
+.four-star:before{
+  content: "★★★★☆"
+}
+.five-star:before{
+  content: "★★★★★"
+}
+
+.proficiency{
+    clear: both;
+    margin: 16px;
+}
+.certificate{
+    border: 1px solid rgb(238, 238, 238);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 65%;
+    overflow: auto;
+}
+.certificate .badge-year, .certificate .badge-institute {
+    float: right;
+    padding: 2px;
+    border: 1px solid rgb(238, 238, 238);
+    margin-left: 5px;
+}
+.clips span{
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.skill{
+    float: left;
+    text-align: center;
+    margin: 8px;
+}
+
+.skill div{
+    color: rgb(102, 102, 102);
+}
+
+@media print{
+    html, body{
+        width: 100%;
+    }
+    .container{
+        border: 0;
+        box-shadow: 0;
+    }
+}
