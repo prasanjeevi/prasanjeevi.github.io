@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+      input {
+        display: block;
+      }
+    </style>
+    <script>
+      function calculate() {
+        let slab, slabTax, rebate
+
+        // get slab details
+        let fy = document.getElementById("fy").value;
+        switch(fy)
+        {
+          case 'FY1213':
+            slab = 200000
+            slabTax = 0.1 // 10%
+            rebate = 0
+          break;
+          case 'FY1314':
+            slab = 200000
+            slabTax = 0.1 // 10%
+            rebate = 2000
+          break;
+          case 'FY1415':
+          case 'FY1516':
+            slab = 250000
+            slabTax = 0.1 // 10%
+            rebate = 2000
+          break;
+          case 'FY1617':
+            slab = 250000
+            slabTax = 0.1 // 10%
+            rebate = 5000
+          break;
+          case 'FY1718':
+            slab = 250000
+            slabTax = 0.05 // 5%
+            rebate = 5000
+          break;
+        }
+
+        let i1 = document.getElementById("1").value
+        let i2 = document.getElementById("2").value
+        let i3 = document.getElementById("3").value = i1 - i2
+        let i4 = document.getElementById("6").value = document.getElementById("4").value = calculateTax(i3, slab, slabTax, rebate)
+        let i7 = document.getElementById("7").value
+        document.getElementById("9").value = roundoffToNearestTen(Math.max(i7 - i4, 0)) // Negative number to zero
+        document.getElementById("8").value = roundoffToNearestTen(Math.max(i4 - i7, 0))
+      }   
+
+      function calculateTax(income, slab, slabTax, rebate) {
+        if (income < slab) return 0
+        var amount = roundoffToNearestTen((income - slab) * slabTax - rebate)
+        var cess = Math.round(amount * 0.02) + Math.round(amount * 0.01)
+        return amount + cess
+      }
+
+      function roundoffToNearestTen(number) {
+        if (number <= 5) return 0;
+        return Math.ceil(Math.round(number, 1) / 10) * 10
+      }
+
+    </script>
+  </head>
+  <body>
+    <label>Gross total income</label><input id="1" type="number">
+    <label>Deductions under Chapter-VI-A</label><input id="2" type="number">
+    <label>Total income</label><input id="3" readonly>
+    <label>Net tax payable</label><input id="4" readonly>
+    <label>Interest payable</label><input id="5" readonly value="0">
+    <label>Total tax and interest payable</label><input id="6" readonly>
+    <label>Taxes paid</label><input id="7" type="number">
+    <label>Tax payable</label><input id="8" readonly>
+    <label>Refund</label><input id="9" readonly>
+    <select id="fy">
+      <option value="FY1718">FY2017-18 AY2018-19</option>
+      <option value="FY1617">FY2016-17 AY2017-18</option>
+      <option value="FY1516">FY2015-16 AY2016-17</option>
+      <option value="FY1415">FY2014-15 AY2015-16</option>
+      <option value="FY1314">FY2013-14 AY2014-15</option>
+      <option value="FY1213">FY2012-13 AY2013-14</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+  </body>
+</html>
