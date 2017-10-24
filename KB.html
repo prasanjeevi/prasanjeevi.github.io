@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KeyBoard</title>
+<style>
+ul
+{
+display:block;
+clear:both;
+list-style:none;
+margin:0px;
+padding:0px;
+}
+li
+{
+width:42px;
+height:42px;
+border:4px solid #111111;
+float:left;
+background:black;
+color:white;
+font-weight:bold;
+}
+li:hover
+{
+background:#c0c0c0;
+color:black;
+}
+#spacebar
+{
+width:242px;
+}
+.small
+{
+font-size:14px;
+line-height:42px;
+}
+#num 
+{
+font-size:14px;
+}
+ul li span
+{
+display:block;
+width:100%;
+height:50%;
+}
+.medium
+{
+width:92px;
+line-height:42px;
+}
+#capslock
+{
+width:66px;
+line-height:42px;
+}
+#or
+{
+width:66px;
+}
+#tab
+{
+width:54px;
+line-height:42px;
+}
+#tilde
+{
+width:26px;
+}
+#enter
+{
+width:104px;
+line-height:42px;
+}
+#shift
+{
+width:128px;
+line-height:42px;
+}
+#backspace
+{
+width:94px;
+line-height:42px;
+}
+.vertical
+{
+width:42px;
+height:92px;
+line-height:92px;
+position:absolute;
+margin-left:150px;
+}
+#zero
+{
+line-height:16px;
+}
+#arrow
+{
+position:absolute;
+margin-left:606px;
+width:128px;
+}
+#arrow ul
+{
+margin:0px;
+padding:0px;
+}
+#arrow li
+{
+width:34px;
+height:24px;
+}
+#up
+{
+margin-left:42px;
+}
+div
+{
+background:#111111;
+}
+#func
+{
+float:left;
+font-size:12px;
+}
+#func li
+{
+width:37px;
+height:24px;
+}
+</style>
+</head>
+<body>
+<div style="margin:0px;padding:10px;width:936px;height:300px;position:absolute">
+<div id="func">
+<ul><li style="width:28px">Esc</li><li>F1</li><li>F2</li><li>F3</li><li>F4</li><li>F5</li><li>F6</li><li>F7</li><li>F8</li><li>F9</li><li>F10</li><li>F11</li><li>F12</li><li><span>Prt Sc</span><span>Sys Rq</span></li><li><span>Pause</span><span>Break</span></li><li>Insert</li><li>Delete</li><li>Home</li><li>End</li><li><span>Page</span><span>Up</span></li><li><span>Page</span><span>Down</span></li></ul>
+</div>
+<div style="float:left;clear:both">
+<ul id="num"><li id="tilde"><span>~</span><span>`</span></li><li><span>!</span><span>1</span></li><li><span>@</span><span>2</span></li><li><span>#</span><span>3</span></li><li><span>$</span><span>4</span></li><li><span>%</span><span>5</span></li><li><span>^</span><span>6</span></li><li><span>&</span><span>7</span></li><li><span>*</span><span>8</span></li><li><span>(</span><span>9</span></li><li><span>)</span><span>0</span></li><li><span>-</span><span>_</span></li><li><span>+</span><span>=</span></li><li id="backspace">Backspace</li></ul></ul>
+<ul id="qwerty"><li id="tab">Tab</li><li>Q</li><li>W</li><li>E</li><li>R</li><li>T</li><li>Y</li><li>U</li><li>I</li><li>O</li><li>P</li><li><span>{</span><span>[</span></li><li><span>}</span><span>]</span></li><li id="or"><span>|</span><span>\</span></li></ul>
+<ul id="home"><li id="capslock">Caps Lk</li><li>A</li><li>S</li><li>D</li><li>F</li><li>G</li><li>H</li><li>J</li><li>K</li><li>L</li><li><span>:</span><span>;</span></li><li><span>"</span><span>'</span></li><li id="enter">Enter</li></ul>
+<ul id="zxcv"><li class="medium">Shift<li>Z</li><li>X</li><li>C</li><li>V</li><li>B</li><li>N</li><li>M</li><li><span>&lt;</span><span>,</span></li><li><span>&gt;</span><span>.</span></li><li><span>?</span><span>/</span></li><li id="shift">Shift</li></ul>
+<ul id="last"><li class="small">Ctrl</li><li class="small">Fn</li><li></li><li class="small">Alt</li><li id="spacebar"></li><li class="small">Alt</li><li></li><li class="small">Ctrl</li></ul>
+<div id="arrow">
+<ul><li id="up"></li></ul>
+<ul><li></li><li></li><li></li></ul>
+</div>
+</div>
+<div style="float:left">
+<ul><li><span>Num</span><span>Scr</span></li><li>/</li><li>*</li><li>-</li></ul>
+<ul><li>7</li><li>8</li><li>9</li><li class="vertical">+</li></ul>
+<ul><li>4</li><li>5</li><li>6</li></ul>
+<ul><li>1</li><li>2</li><li>3</li><li class="vertical">Enter</li></ul>
+<ul><li id="zero" class="medium"><span>0</span><span>Ins</span></li><li><span>.</span><span>Del</span></li></ul>
+</div>
+</div>
+</body>
+</html>
