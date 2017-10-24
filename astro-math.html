@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Astro Math</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+      }
+      .suba,.natpu{ border-left: 4px solid green}
+      .asuba,.pagai{ border-left: 4px solid red}
+      
+      .athipathi{ border-left: 4px solid #d60093}
+      .samam{ border-left: 4px solid blue}
+
+      .utcham{ border-left: 4px solid orange }
+      .neesam{ border-left: 4px solid black}
+    </style>
+  </head>
+  <body ng-controller="myCtrl" ng-cloak>
+    <div class="container">
+      <h1>Astro Math</h1>
+      <div class="row">
+          <div class="col-sm-6">
+              <table class="table table-bordered" style="text-align:center">
+                  <tr>
+                    <td graha ng-model='grahas[3]'></td>
+                    <td graha ng-model='grahas[5]'></td>
+                    <td graha ng-model='grahas[1]'></td>
+                  </tr>
+                  <tr>
+                    <td graha ng-model='grahas[4]'></td>
+                    <td graha ng-model='grahas[0]'></td>
+                    <td graha ng-model='grahas[2]'></td>
+                  </tr>
+                  <tr>
+                    <td graha ng-model='grahas[8]'></td>
+                    <td graha ng-model='grahas[6]'></td>
+                    <td graha ng-model='grahas[7]'></td>
+                  </tr>
+                </table>
+          </div>
+        </div>
+       <div class="row">
+          <div class="col-sm-12">
+              <table class="table table-bordered" style="text-align:center">
+                  <tr>
+                    <td rasi ng-model='rasi[11]'></td>
+                    <td rasi ng-model='rasi[0]'></td>
+                    <td rasi ng-model='rasi[1]'></td>
+                    <td rasi ng-model='rasi[2]'></td>
+                  </tr>
+                  <tr>
+                    <td rasi ng-model='rasi[10]'></td>
+                    <td rowspan='2' colspan="2" style="vertical-align:middle"><h2>ராசி</h2></td>
+                    <td rasi ng-model='rasi[3]'></td>
+                  </tr>
+                  <tr>
+                    <td rasi ng-model='rasi[9]'></td>
+                    <td rasi ng-model='rasi[4]'></td>
+                  </tr>
+                  <tr>
+                    <td rasi ng-model='rasi[8]'></td>
+                    <td rasi ng-model='rasi[7]'></td>
+                    <td rasi ng-model='rasi[6]'></td>
+                    <td rasi ng-model='rasi[5]'></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+            <div ng-repeat="n in nak">
+            	{{$index+1}}.{{n.display}}
+            </div>
+          </div>   
+      </div><!-- Row -->
+    </div><!-- Container -->
+    
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script type="text/ng-template" id="rasi.html">
+    <div>
+    	<div>{{rasi.display}}</div>
+        <div><span style="color:{{rasi.color}}">{{rasi.icon}}</span> {{rasi.name}}</div>
+        <div ng-repeat="n in rasi.naks">{{n.display}}
+        	<span class="badge" ng-repeat="p in n.p">{{p}}</span>
+        </div>
+        <div class='athipathi'>{{rasi.athipathi}}</div>
+        <div class='utcham'>{{rasi.utcham}}</div>
+        <div class='neesam'>{{rasi.neesam}}</div>
+        <div class='samam'>{{rasi.samam}}</div>
+        <div class='natpu'>{{rasi.natpu}}</div>
+        <div class='pagai'>{{rasi.pagai}}</div>
+        <span></span>
+        <h3>
+        	<span class='badge' ng-if="rasi.lagnam">ல</span>
+        	<span ng-repeat="rn in rasi.nathan">{{rn}}</span>
+        </h3>
+    </div>
+    </script>
+    <script>
+    'use strict';
+    let jathagam = {
+    	lagnam:1,
+    	kattam:[undefined,[4],[5],[0],[3,8],[1],undefined,[6],undefined,undefined,[7],[2]
+    ]};
+	let grahas = [
+		{name:'Suriyan',planet:'Sun',display:'சூரியன்',type:'asuba',icon:'🌞'},
+		{name:'Chandran',planet:'Moon',display:'சந்திரன்',type:'suba',icon:'🌛' },
+		{name:'Chevai',planet:'Mars',display:'செவ்வாய்',type:'asuba',icon:'●',color:'brown'},
+		{name:'Budhan',planet:'Mercury',display:'புதன்',type:'suba',icon:'●',color:'grey'},
+		{name:'Guru',planet:'Jupiter',display:'குரு',type:'suba',icon:'●',color:'orange'},
+		{name:'Sukaran',planet:'Venus',display:'சுக்கிரன்',type:'suba',icon:'●',color:'yellow'},
+		{name:'Sani',planet:'Saturn',display:'சனி',type:'asuba',icon:'●',color:'gold'},
+		{name:'Rahu',planet:'Rahu',display:'ராகு',type:'asuba'},
+		{name:'Ketu',planet:'Ketu',display:'கேது',type:'asuba'}
+	];
+
+	const nak = [
+		{display:'அஸ்வினி'},
+		{display:'பரணி'},
+		{display:'கார்த்திகை'},
+		{display:'ரோகிணி'},
+		{display:'மிருகசீரிடம்'},
+		{display:'திருவாதிரை'},
+		{display:'புனர்பூசம்'},
+		{display:'பூசம்'},
+		{display:'ஆயில்யம்'},
+		{display:'மகம்'},
+		{display:'பூரம்'},
+		{display:'உத்திரம்'},
+		{display:'ஹஸ்தம்'},
+		{display:'சித்திரை'},
+		{display:'சுவாதி'},
+		{display:'விசாகம்'},
+		{display:'அனுசம்'},
+		{display:'கேட்டை'},
+		{display:'மூலம்'},
+		{display:'பூராடம்'},
+		{display:'உத்திராடம்'},
+		{display:'திருவோணம்'},
+		{display:'அவிட்டம்'},
+		{display:'சதயம்'},
+		{display:'பூரட்டாதி'},
+		{display:'உத்திரட்டாதி'},
+		{display:'ரேவதி'}
+	];
+
+	const cp = angular.copy;
+
+	let rasi = [
+		{
+			name:'Aries',display:'மேஷம்',
+			naks:[nak[0],nak[1],cp(nak[2])],
+			athipathi:grahas[2].display,
+			utcham:[grahas[0].display],
+			neesam:[grahas[6].display],
+			samam:[grahas[1].display,grahas[3].display,grahas[5].display],
+			natpu:[grahas[4].display],
+			pagai:[grahas[7].display,grahas[8].display]
+		},
+		{
+			name:'Taures',display:'ரிஷபம்',
+			naks:[cp(nak[2]),nak[3],cp(nak[4])],
+			athipathi:grahas[5].display,
+			utcham:[grahas[1].display],
+			neesam:[grahas[7].display,grahas[8].display],
+			samam:[grahas[2].display],
+			natpu:[grahas[3].display,grahas[6].display],
+			pagai:[grahas[0].display,grahas[4].display]
+		},
+		{
+			name:'Gemini',display:'மிதுனம்',
+			naks:[cp(nak[4]),nak[5],cp(nak[6])],
+			athipathi:grahas[3].display,
+			utcham:undefined,
+			neesam:undefined,
+			samam:[grahas[0].display],
+			natpu:[grahas[1].display,grahas[5].display,grahas[6].display,grahas[7].display,grahas[8].display],
+			pagai:[grahas[2].display,grahas[4].display]
+		},
+		{
+			name:'Cancer',display:'கடகம்',
+			naks:[cp(nak[6]),nak[7],nak[8]],
+			athipathi:grahas[1].display,
+			utcham:[grahas[4].display],
+			neesam:[grahas[2].display],
+			samam:[grahas[0].display],
+			natpu:undefined,
+			pagai:[grahas[3].display,grahas[5].display,grahas[6].display,grahas[7].display,grahas[8].display]
+		},
+		{
+			name:'Leo',display:'சிம்மம்',
+			naks:[nak[9],nak[10],cp(nak[11])],
+			athipathi:grahas[0].display,
+			utcham:undefined,
+			neesam:undefined,
+			samam:undefined,
+			natpu:[grahas[1].display,grahas[2].display,grahas[3].display,grahas[4].display],
+			pagai:[grahas[5].display,grahas[6].display,grahas[7].display,grahas[8].display]
+		},
+		{
+			name:'Virgo',display:'கன்னி',
+			naks:[cp(nak[11]),nak[12],cp(nak[13])],
+			athipathi:grahas[3].display,
+			utcham:[grahas[3].display],
+			neesam:[grahas[5].display],
+			samam:[grahas[0].display],
+			natpu:[grahas[1].display,grahas[4].display,grahas[6].display,grahas[7].display,grahas[8].display],
+			pagai:[grahas[2].display]
+		},
+		{
+			name:'Libra',display:'துலாம்',
+			naks:[cp(nak[13]),nak[14],cp(nak[15])],
+			athipathi:grahas[5].display,
+			utcham:[grahas[6].display],
+			neesam:[grahas[0].display],
+			samam:[grahas[1].display,grahas[2].display],
+			natpu:[grahas[3].display,grahas[7].display,grahas[8].display],
+			pagai:[grahas[4].display]
+		},
+		{
+			name:'Scorpio',display:'விருச்சிகம்',
+			naks:[cp(nak[15]),nak[16],nak[17]],
+			athipathi:grahas[2].display,
+			utcham:[grahas[7].display,grahas[8].display],
+			neesam:[grahas[1].display],
+			samam:[grahas[3].display,grahas[5].display],
+			natpu:[grahas[0].display,grahas[4].display],
+			pagai:[grahas[6].display]
+		},
+		{
+			name:'Sagittarius',display:'தனுசு',
+			naks:[nak[18],nak[19],cp(nak[20])],
+			athipathi:grahas[4].display,
+			utcham:undefined,
+			neesam:undefined,
+			samam:[grahas[1].display,grahas[3].display,grahas[6].display],
+			natpu:[grahas[0].display,grahas[2].display,grahas[5].display,grahas[7].display,grahas[8].display],
+			pagai:undefined
+		},
+		{
+			name:'Capricorn',display:'மகரம்',
+			naks:[cp(nak[20]),nak[21],cp(nak[22])],
+			athipathi:grahas[6].display,
+			utcham:[grahas[2].display],
+			neesam:[grahas[4].display],
+			samam:[grahas[1].display,grahas[3].display],
+			natpu:[grahas[5].display,grahas[7].display,grahas[8].display],
+			pagai:[grahas[0].display]
+		},
+		{
+			name:'Aquarius',display:'கும்பம்',
+			naks:[cp(nak[22]),nak[23],cp(nak[24])],
+			athipathi:grahas[6].display,
+			utcham:undefined,
+			neesam:undefined,
+			samam:[grahas[1].display,grahas[2].display,grahas[3].display,grahas[4].display],
+			natpu:[grahas[5].display],
+			pagai:[grahas[0].display,grahas[7].display,grahas[8].display]
+		},
+		{
+			name:'Pisces',display:'மீனம்',
+			naks:[cp(nak[24]),nak[25],nak[26]],
+			athipathi:grahas[4].display,
+			utcham:[grahas[5].display],
+			neesam:[grahas[3].display],
+			samam:[grahas[1].display,grahas[6].display],
+			natpu:[grahas[0].display,grahas[2].display,grahas[7].display,grahas[8].display],
+			pagai:undefined
+		}
+	];
+
+rasi[0].naks[2].p = [1]; //2 கார்த்திகை 1
+rasi[1].naks[0].p = [2,3,4]; //2 கார்த்திகை 2,3,4
+rasi[1].naks[2].p = [1,2]; //4 மிருகசீரிடம் 1,2
+rasi[2].naks[0].p = [3,4]; //4 மிருகசீரிடம் 3,4
+rasi[2].naks[2].p = [1,2,3]; //6 புனர்பூசம் 1,2,3
+rasi[3].naks[0].p = [4]; //6 புனர்பூசம் 4
+rasi[4].naks[2].p = [1]; //11 உத்திரம் 1
+rasi[5].naks[0].p = [2,3,4]; //11 உத்திரம் 2,3,4
+rasi[5].naks[2].p = [1,2]; //13 சித்திரை 1,2
+rasi[6].naks[0].p = [3,4]; //13 சித்திரை 3,4
+rasi[6].naks[2].p = [1,2,3]; //15 விசாகம் 1,2,3
+rasi[7].naks[0].p = [4]; //15 விசாகம் 4
+rasi[8].naks[2].p = [1]; //20 உத்திராடம் 1
+rasi[9].naks[0].p = [2,3,4]; //20 உத்திராடம் 2,3,4
+rasi[9].naks[2].p = [1,2]; //22 அவிட்டம் 1,2
+rasi[10].naks[0].p = [3,4]; //22 அவிட்டம் 3,4
+rasi[10].naks[2].p = [1,2,3]; //24 பூரட்டாதி 1,2,3
+rasi[11].naks[0].p = [4]; //24 பூரட்டாதி 4
+
+
+for(let i=0;i<12;i++){
+	rasi[i].nathan =  (jathagam.kattam[i] === undefined ? undefined :  jathagam.kattam[i].map(index=>grahas[index].display));
+	if(i === jathagam.lagnam) rasi[i].lagnam = true;
+}
+//console.log(rasi);
+    var app = angular.module('myApp',[]);
+
+    app.directive('graha', function() {
+    	return {
+        // can be used as attribute or element
+        restrict: 'AE',
+        scope: {
+            graha: '=ngModel'
+        },
+        // which markup this directive generates
+        template: '<div class="{{graha.type}}">' +
+        	'<div>{{graha.display}}</div>' +
+            '<div><span style="color:{{graha.color}}">{{graha.icon}}</span> {{graha.planet}}</div>' +
+            '</div>'
+    	};
+	});
+
+	app.directive('rasi', function() {
+    	return {
+        // can be used as attribute or element
+        restrict: 'AE',
+        scope: {
+            rasi: '=ngModel'
+        },
+        // which markup this directive generates
+        templateUrl: 'rasi.html'
+    	};
+	});
+
+    app.controller('myCtrl',function($scope){
+      $scope.grahas = grahas;
+      $scope.rasi = rasi;
+      $scope.nak = nak;
+      //$scope.jathagam = jathagam;
+      $scope.selected = function(){
+      };
+
+      $scope.reset = function(){
+      };
+    });
+
+    </script>
+  </body>
+</html>
