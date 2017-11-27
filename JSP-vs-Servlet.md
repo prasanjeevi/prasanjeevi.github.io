@@ -5,7 +5,7 @@ JSP-JavaServer Pages | Servlet
 View | Controller
 Java in HTML | HTML in Java
 Directives & Scriptlets | HttpServlet / GenericServlet / Servlet
-| web.xml / @WebServlet
+|  | web.xml / @WebServlet
 |  | fast
 Easy |
 Custom tags |
