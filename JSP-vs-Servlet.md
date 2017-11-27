@@ -6,7 +6,7 @@ View | Controller
 Java in HTML | HTML in Java
 Directives & Scriptlets | HttpServlet / GenericServlet / Servlet
 | web.xml / @WebServlet
-| fast
+|  | fast
 Easy |
 Custom tags |
 
