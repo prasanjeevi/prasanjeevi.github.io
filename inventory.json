@@ -1,1 +1,3 @@
-["iPhone 7", "iPhone 5", "Mi 4i", "Xperia Mini"]
+{
+  products: ["iPhone 7", "iPhone 5", "Mi 4i", "Xperia Mini"]
+}
