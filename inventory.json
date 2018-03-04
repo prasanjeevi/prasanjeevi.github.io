@@ -1,3 +1,8 @@
 {
-  "products": ["iPhone 7", "iPhone 5", "Mi 4i", "Xperia Mini"]
+  "products": [
+    {"name": "iPhone 7"},
+    {"name": "iPhone 5"},
+    {"name": "Mi 4i"},
+    {"name": "Xperia Mini", "notInUse": true}
+  ]
 }
