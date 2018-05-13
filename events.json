@@ -12,7 +12,27 @@
     "start"  : "2018-05-01"
    },
    {
+    "title"  : "Ramzan",
+    "start"  : "2018-06-15"
+   },
+   {
     "title"  : "Independence Day",
     "start"  : "2018-08-15"
+   },
+   {
+    "title"  : "Gandhi Jayanthi",
+    "start"  : "2018-10-02"
+   },
+   {
+    "title"  : "Ayutha Pooja",
+    "start"  : "2018-10-18"
+   },
+   {
+    "title"  : "Deepavali",
+    "start"  : "2018-11-06"
+   },
+   {
+    "title"  : "Christmas",
+    "start"  : "2018-12-25"
    }
 ]
