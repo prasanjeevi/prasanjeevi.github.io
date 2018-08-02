@@ -9,3 +9,17 @@ https://blog.ghost.org/markdown/
 https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
 https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc
 https://jonsuh.com/hamburgers/
+https://scotthelme.co.uk/
+https://haubek.github.io/
+https://github.com/poole/hyde
+https://github.com/madskristensen/Miniblog.Core
+https://www.codeproject.com/Reference/720512/List-of-Visual-Studio-Project-Type-GUIDs
+https://medium.com/@Alikayaspor/the-most-remarkable-numbers-prime-numbers-569566e837c2
+https://github.com/Pixabay/jQuery-tagEditor
+https://github.com/stackblitz/core
+https://marksheet.io/sass-scss-less.html
+https://gohugo.io/
+http://lea.verou.me/
+https://www.ampproject.org/learn/overview/
+https://andrewlock.net/
+http://www.sqlitetutorial.net/
