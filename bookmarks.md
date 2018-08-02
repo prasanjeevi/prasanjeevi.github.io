@@ -1,0 +1,11 @@
+https://www.scribd.com/document/293584888/Mike-Cernovich-Gorilla-Mindset-epub#
+https://blogs.msdn.microsoft.com/ivo_manolov/2008/12/17/introduction-to-testapi-part-2-command-line-parsing-apis/
+http://www.ndesk.org/Options
+https://support.apple.com/en-in/guide/terminal/keyboard-shortcuts-trmlshtcts/mac
+https://exceptionnotfound.net/decimal-vs-double-and-other-tips-about-number-types-in-net/
+https://medium.com/programmers-developers/building-books-with-markdown-using-pandoc-f0d19df7b2ca
+http://rtalbert.org/how-i-wrote-my-book/
+https://blog.ghost.org/markdown/
+https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/
+https://medium.com/dailyjs/principles-to-code-by-3c516ad61fcc
+https://jonsuh.com/hamburgers/
