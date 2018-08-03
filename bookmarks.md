@@ -51,3 +51,4 @@ https://en.wikipedia.org/wiki/Cloud_computing
 http://www.extremeoptimization.com/resources/Articles/FPDotNetConceptsAndFormats.aspx#formats
 http://csharpindepth.com/Articles/General/FloatingPoint.aspx?printable=true
 http://rachelappel.com/asp-net-mvc-actionresults-explained/
+https://devhints.io/npm
