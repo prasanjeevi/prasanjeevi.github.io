@@ -101,3 +101,5 @@ http://www.helpingwithmath.com/by_subject/place_value/rou_nearest10.htm
 https://github.com/Pivotal-Field-Engineering/ephemerol
 https://www.banderson.me/2014/11/01/react-series-intro
 https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/0393071952
+https://medium.com/@js_tut/the-complete-css-flex-box-tutorial-d17971950bdc
+https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2
