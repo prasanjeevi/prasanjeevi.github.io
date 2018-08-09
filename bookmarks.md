@@ -103,3 +103,10 @@ https://www.banderson.me/2014/11/01/react-series-intro
 https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/0393071952
 https://medium.com/@js_tut/the-complete-css-flex-box-tutorial-d17971950bdc
 https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2
+https://github.com/sparksuite/simplemde-markdown-editor
+https://goodies.pixabay.com/jquery/tag-editor/demo.html
+https://code.tutsplus.com/tutorials/create-a-wysiwyg-editor-with-the-contenteditable-attribute--cms-25657
+https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand
+https://sean.is/poppin/tags/
+https://plainjs.com/javascript/plugins/
+https://www.simonewebdesign.it/demo/html5editor/
