@@ -12,3 +12,6 @@ unzip archive.zip
 unzip -l archive.zip
 
 ```
+
+## Open VS Code from terminal using `code .`
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/
