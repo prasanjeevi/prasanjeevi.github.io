@@ -2,12 +2,12 @@
 # Maven
 
 ## Run Spring Boot
-mvn spring-boot:run
-java -jar target/myapplication-0.0.1-SNAPSHOT.jar
+`mvn spring-boot:run`
+`java -jar target/myapplication-0.0.1-SNAPSHOT.jar`
 
 ## Skip Tests
--DskipTests
--Dmaven.test.skip=true
+`-DskipTests`
+`-Dmaven.test.skip=true`
 
 ## Proxy
 
