@@ -23,3 +23,6 @@ export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/
 brew install git
 brew cask install vagrant
 brew cask install virtualbox
+
+## Toggle Show/Hide hidden folders
+⌘+⇧+.
