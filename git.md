@@ -5,7 +5,7 @@
 git config --global user.name Sanjeevi
 git config --global user.email prasanjeevi@gmail.com
 
-git config --local user.name Sanjeevi
+git config user.name Sanjeevi #Default --local
 git config --local user.email prasanjeevi@gmail.com
 
 git config -l #--system, --global, --local
