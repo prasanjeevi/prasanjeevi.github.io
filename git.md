@@ -1,10 +1,14 @@
 # GIT
 
 # Setup - Identity
-git config --global user.name "Sanjeevi"
+```
+git config --global user.name Sanjeevi
 git config --global user.email prasanjeevi@gmail.com
 
-git config -l
+git config --local user.name Sanjeevi
+git config --local user.email prasanjeevi@gmail.com
+
+git config -l #--system, --global, --local
 
 git init
 git add .
@@ -14,3 +18,4 @@ git push origin master
 
 git status
 git log
+```
