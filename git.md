@@ -13,8 +13,8 @@ git config -l #--system, --global, --local
 git init
 git add .
 git commit -m "comment"
-git remote add origin url
-git push origin master
+git remote add origin https://github.com/prasanjeevi/NetServer.git
+git push -u origin master
 
 git status
 git log
